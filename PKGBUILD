@@ -28,10 +28,8 @@ build() {
 }
 
 package() {
-
   cd SDL2-$pkgver/build
   make install DESTDIR=$pkgdir
-
 }
 
 sha256sums=('332cb37d0be20cb9541739c61f79bae5a477427d79ae85e352089afdaf6666e4'
