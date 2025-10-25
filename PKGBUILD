@@ -1,8 +1,6 @@
-# Maintainer:  Dave Murphy <davem@devkitpro.org>
-
-pkgname=wiiu-sdl2
+pkgname=wiiu-sdl2-dkosmari
 pkgver=2.28.5
-pkgrel=2
+pkgrel=1
 pkgdesc="A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard"
 arch=('any')
 url="https://libsdl.org"
@@ -13,6 +11,8 @@ depends=('wut')
 source=("${url}/release/SDL2-${pkgver}.tar.gz"
         "wiiu-SDL2-${pkgver}.patch")
 groups=('wiiu-portlibs' 'wiiu-sdl2-libs')
+conflicts=('wiiu-sdl2')
+provides=('wiiu-sdl2')
 
 build() {
   cd SDL2-$pkgver

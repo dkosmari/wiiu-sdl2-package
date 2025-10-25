@@ -5,9 +5,8 @@ This repository has binary packages for
 
 It has experimental PRs not (yet) present on the official devkitPro repository.
 
-## Versioning
+## Package name
 
-Since pacman does not allow advanced versioning schemes, the packages here will use the
-same version number as the official package. This way, pacman will never "upgrade" it back
-to the official package, unless there's a new official release.
-
+This package conflicts with the official SDL2 package. You can only have one of the two
+installed. Pacman will take care of the conflict and uninstall the other version, so you
+don't have to do anything, other than confirming the removal of the conflicting package.
