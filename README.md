@@ -11,7 +11,4 @@ This package conflicts with the official SDL2 package. You can only have one of 
 installed. Pacman will take care of the conflict and uninstall the other version, so you
 don't have to do anything, other than confirming the removal of the conflicting package.
 
-
-## Dependencies
-
-This package depends on `ppc-libiconv`, from Extrems' repository: https://github.com/extremscorner/pacman-packages
+The `-dkosmari` suffix is there to make it clear it's not the official package.
